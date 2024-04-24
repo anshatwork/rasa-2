@@ -1,0 +1,28 @@
+version: "3.1"
+
+
+
+
+stories:
+  - story: User wants to get brand name and category
+    steps:
+      - intent: inform
+        entities:
+          - brand: "BrandX"
+          - name: "nameA"
+          - category : "categoryY"
+      - action: utter_greet 
+    
+ 
+  - story: User is looking for some new shit 
+    steps:
+    - intent: inform
+      entities:
+        - brand: "famous brand"
+        - category: "categoryL"
+    - action: utter_greet 
+    
+
+
+
+

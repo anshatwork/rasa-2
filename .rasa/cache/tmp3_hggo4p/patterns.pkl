@@ -1,0 +1,10 @@
+[
+  {
+    "name": "Brand",
+    "pattern": "(\\bMuscleBlaze\\b|\\bMuscletech\\b|\\bOptimum\\ Nutrition\\b|\\bMyprotein\\b|\\bFast\\&Up\\b|\\bSciTech\\ Nutrition\\b|\\bAS\\ IT\\ IS\\b|\\bWow\\ Life\\ Science\\b|\\bAbbott\\b|\\bWhey\\ Protein\\b|\\bOptimum\\ Gold\\ Standard\\b|\\bBCAA\\b|\\bCasein\\b|\\bIsopure\\b|\\bGNC\\b|\\bHimalayan\\ Organics\\b|\\bHealthKart\\b|\\bNeulife\\b|\\bProtinex\\b|\\bSeamless\\b|\\bFury\\b|\\bMusclePharm\\b|\\bEndura\\b|\\bPower\\ Play\\b|\\bAptar\\b|\\bDymatize\\b|\\bRoyal\\ Green\\b|\\bOrganic\\ India\\b|\\bBareBones\\b|\\bHealthXP\\b|\\bMuscleTech\\ Nitro\\ Tech\\b|\\bMuscleBlaze\\ Raw\\ Whey\\b|\\bVitamin\\ C\\ Plus\\b)"
+  },
+  {
+    "name": "category",
+    "pattern": "(\\bVMHS\\b|\\bFitness\\b|\\bProteins\\b|\\bEssentials\\b|\\bWeight\\ Loss\\b|\\bGainers\\b|\\bFoods\\b|\\bWellness\\b|\\bBars\\b|\\bPeanut\\ Butter\\b|\\bPersonal\\ Care\\b|\\bGym\\ Supports\\b|\\bGeneral\\ Care\\b|\\bSkin\\ Care\\b|\\bMen\\ Grooming\\b|\\bRaw\\ Whey\\b|\\bACV\\b|\\bBreakfast\\ /\\ Snacks\\b|\\bMultivitamins\\b|\\bSpeciality\\ Supplements\\b|\\bWeight\\ Management\\b|\\bWeight\\ loss\\b|\\bFamily\\ Nutrition\\b|\\bGrooming\\b|\\bOmega\\ Fatty\\ Acids\\b|\\bAntioxidants\\b|\\bAyurvedic\\ Herbs\\b|\\bHair\\ Loss\\b|\\bVitamin\\ B\\b|\\bSingle\\ Herbs\\b|\\bGym\\ Essentials\\b|\\bVitamins\\b|\\bHealth\\ Food\\ \\&\\ Drinks\\b|\\bSpecialty\\ Supplements\\b|\\bOther\\ Supplements\\b|\\bWorkout\\ Essentials\\b|\\bFitness\\ Clothing\\b|\\bMinerals\\b|\\bPre/Post\\ Workout\\b|\\bCalcium/Magnesium\\b|\\bProtein\\b|\\bAccessories\\b|\\bWorkout\\ Programs\\b|\\bAmino\\ Acids\\b|\\bFood\\b|\\bJuices\\b|\\bPersonal\\ Wellness\\b|\\bService\\b|\\bSuper\\ Food\\b|\\bservice\\b)"
+  }
+]

@@ -1,0 +1,38 @@
+intents:
+  - inform
+  - user_name
+
+entities:
+  - category
+  - brand
+  - name
+
+slots:
+    brand:
+      type: text
+      mappings:
+      - type: from_entity
+        entity: brand
+    category:
+      type: text
+      mappings:
+      - type: from_entity
+        entity: category
+    name: 
+      type: text
+      mappings:
+      - type: from_entity
+        entity: name
+
+    
+
+responses:
+  utter_greet:
+    - text: "{name} is looking for the brand {brand} and of the category {category}"
+
+# actions:
+#   - action_extract_entities
+
+# templates:
+#   utter_result:
+#     - text: "looking for {category_entity} of brand  {brand_entity} : {result}"  

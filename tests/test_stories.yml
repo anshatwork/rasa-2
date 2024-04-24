@@ -1,0 +1,29 @@
+# #### This file contains tests to evaluate that your bot behaves as expected.
+# #### If you want to learn more, please see the docs: https://rasa.com/docs/rasa/testing-your-assistant
+
+# stories:
+# - story: FastUp whey protein for strength
+#   steps:
+#   - intent: inform
+#     entities:
+#     - brand: "FastUp"
+#     - category: "whey protein"
+#   - action: action_return_entities
+
+# - story: napalm brand for skin care
+#   steps:
+#   - intent: inform
+#     entities:
+#       - category: "skin care"
+#       - categort: " napalm"
+#   - action: action_return_entities
+
+
+# - story: ON whey protein for weight loss
+#   steps:
+#   - intent: inform
+#     entities:
+#     - brand: "ON"
+#     - category: "weight loss"
+#   - action: action_return_entities
+

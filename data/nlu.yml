@@ -1,0 +1,283 @@
+version: "3.1"
+
+nlu:
+
+- lookup: Brand 
+  examples: |
+        - MuscleBlaze
+        - Muscletech
+        - Optimum Nutrition
+        - Myprotein
+        - Fast&Up
+        - SciTech Nutrition
+        - AS IT IS
+        - Wow Life Science
+        - Abbott
+        - Whey Protein
+        - Optimum Gold Standard
+        - BCAA
+        - Casein
+        - Isopure
+        - GNC
+        - Himalayan Organics
+        - HealthKart
+        - Neulife
+        - Protinex
+        - Seamless
+        - Fury
+        - MusclePharm
+        - Endura
+        - Power Play
+        - Aptar
+        - Dymatize
+        - Royal Green
+        - Organic India
+        - BareBones
+        - HealthXP
+        - MuscleTech Nitro Tech
+        - MuscleBlaze Raw Whey
+        - Vitamin C Plus
+    
+- lookup: category
+  examples: |
+      - VMHS
+      - Fitness
+      - Proteins
+      - Essentials
+      - Weight Loss
+      - Gainers
+      - Foods
+      - Wellness
+      - Bars
+      - Peanut Butter
+      - Personal Care
+      - Gym Supports
+      - General Care
+      - Skin Care
+      - Men Grooming
+      - Raw Whey
+      - ACV
+      - Breakfast / Snacks
+      - Multivitamins
+      - Speciality Supplements
+      - Weight Management
+      - Weight loss
+      - Family Nutrition
+      - Grooming
+      - Omega Fatty Acids
+      - Antioxidants
+      - Ayurvedic Herbs
+      - Hair Loss
+      - Vitamin B
+      - Single Herbs
+      - Gym Essentials
+      - Vitamins
+      - Health Food & Drinks
+      - Specialty Supplements
+      - Other Supplements
+      - Workout Essentials
+      - Fitness Clothing
+      - Minerals
+      - Pre/Post Workout
+      - Calcium/Magnesium
+      - Protein
+      - Accessories
+      - Workout Programs
+      - Amino Acids
+      - Food
+      - Juices
+      - Personal Wellness
+      - Service
+      - Super Food
+      - service
+
+
+- synonym: Optimum Nutrition
+  examples: |
+      - ON
+      - on
+      - On
+
+- synonym: credit
+  examples: |
+      - credit card account
+      - credit account
+
+- synonym: food
+  examples: |
+      - snack
+      - eat
+      - edible
+      - oats 
+
+- synonym: loss
+  examples: |
+      - lose
+      - lost
+      - shed
+      - shred
+
+- synonym: VMHS
+  examples: |
+      - health supplements
+      - minerals
+      - fish oil
+
+- synonym: Weight loss
+  examples: |
+    - pounds
+    - kilos
+    - keto
+    - low carb
+    - macro friendly
+    - diet
+    - weight loss
+    - lose weight
+    - shredded
+
+- synonym: workout
+  examples: |
+    - training
+    - gym
+    - working out 
+
+- synonym: essentials
+  examples: |
+    - creatine
+    - omega 3
+    - bcaa
+    - BCAA
+    - omega3
+    - Bcaa
+    - l-carnitine
+    - l-citrulline
+
+- synonym: MuscleBlaze
+  examples: |
+    - MB
+    - Muscleblaze
+    - muscleblaze
+
+- synonym: T boost
+  examples: |
+    - Test
+    - testosterone
+    - t-boost
+
+- synonym: HealthKart
+  examples: |
+    - hk
+    - HK
+    - healthkart
+    - Hk
+
+- synonym: essential amino acids
+    - EAA
+    - eaa  
+
+
+- intent: user_name
+  examples: |
+    - My name is [Ansh]{"entity" : "name" , "value" : "Ansh"} and I am looking for fitness supplements.
+    - I am looking for gym equipment and my name is [Vikas]{"entity" : "name" , "value" : "Vikas"}.
+    - I eat shit and my name is [Rohan]{"entity" : "name" , "value" : "Rohan"}.
+
+
+- intent : inform
+  examples : |
+    - I'm looking for a [protein ] { "entity" : "category", "value" : "protein" } powder to bulk up.
+    - What's a good [pre-workout]{"entity" : "category" ,"value" : "pre workout"} for energy before the gym? 
+    - Can you recommend a good protein [snack]{"entity" : "category" , "value" : "snack"}? 
+    - Any good [protein]{"entity" : "category", "value" : "protein"} shakes to help me [lose weight]{"entity" : "category", "value" : "lose weight"}?
+    - Need something for better [gym performance]{"entity" : "category", "value" : "gym performance"}.
+    - Powders to help me [lose weight]{"entity" : "category", "value" : "lose weight"} quickly.
+    - The red [MuscleBlaze]{"entity" : "brand" , "value" : "MuscleBlaze"} [whey protein]{"entity" : "category", "value" : "whey protein"} everyone's talking about.
+    - I'm looking for a good [Optimum Nutrition]{"entity" : "brand","value" : "Optimum Nutrition"} product to improve my endurance [training]{"entity" : "category", "value" : "training"}.
+    - Can you recommend a quality [creatine]{"entity" : "category", "value" : "creatine"} supplement for beginners?
+    - Need a good protein source to help me with [weight management]{"entity" : "category", "value" : "weight management"} goals.
+    - [BCAA]{"entity" : "category", "value" : "BCAA"} [muscleblaze]{"entity" : "brand", "value" : "MuscleBlaze"}
+    - [Skin care]{"entity" : "category", "value" : "Skin care"} for women.
+    - I'm curious about the benefits of [Omega3]{"entity" : "category", "value" : "Omega3"} fatty acids for overall health.
+    - Need a good [pre-workout]{"entity" : "category", "value" : "pre workout"} boost before hitting the gym.
+    - Need recommendations for protein [bars]{"entity" : "category", "value" : "bars"} for a busy lifestyle.
+    - Curious about [multivitamins]{"entity" : "category", "value" : "multivitamins"} for men for overall health support.
+    - Considering [keto]{"entity" : "category", "value" : "keto"} friendly snacks for a low carb [diet]{"entity" : "category", "value" : "diet"}.
+    - Top anti-aging [skincare]{"entity" : "category", "value" : "skincare"} products for women.
+    - Looking for a tasty way to incorporate [ON]{"entity" : "brand", "value" : "ON"} [whey protein]{"entity" : "category" , "value" : "whey protein"} into my morning [oats]{"entity" : "category", "value" : "oats"} routine.
+    - Best [fat burners]{"entity" : "category", "value" : "fat burners"} to complement a rigorous workout regimen.
+    - Any recommendations for [collagen]{"entity" : "category", "value" : "collagen"} supplements to support skin health?
+    - Curious about the benefits of [smelling salts]{"entity" : "category", "value" : "smelling salts"} for pre-workout focus and energy.
+    - In search of high-quality [pea protein]{"entity" : "category", "value" : "pea protein"} options for a plant-based diet.
+    - Suggestions for incorporating [ON ]{"entity" : "brand", "value" : "ON "} [whey protein]{"entity" : "category" , "value" : "whey protein"} into a post-workout shake for muscle recovery?
+    - Effective [fat burners]{"entity" : "category", "value" : "fat burners"} for those aiming to achieve [weight loss]{"entity" : "category" , "value" : "weight loss"} goals.
+    - Exploring the benefits of [collagen supplementation]{"entity" : "category", "value" : "collagen supplementation"} for joint health and mobility.
+    - How to properly use [smelling salts]{"entity" : "category", "value" : "smelling salts"} for maximum workout performance enhancement?
+    - Best practices for cooking with [pea protein]{"entity" : "category", "value" : "pea protein"} to create delicious and nutritious meals.
+    - Considering [ON whey protein]{"entity" : "brand", "value" : "ON whey protein"} as a meal replacement option for busy days.
+    - Personal experiences with [fat burners]{"entity" : "category", "value" : "fat burners"} and their impact on metabolism and energy levels.
+    - The role of [collagen]{"entity" : "category", "value" : "collagen"} in promoting hair and nail health, and reducing signs of aging.
+    - Exploring the science behind the effectiveness of [smelling salts]{"entity" : "category", "value" : "smelling salts"} in boosting alertness and focus.
+    - Comparison of different [pea protein]{"entity" : "category", "value" : "pea protein"} brands and their nutritional profiles.
+    - Incorporating [ON whey protein]{"entity" : "brand", "value" : "ON whey protein"} into baking recipes for added protein content.
+    - Tips for choosing the right [fat burner supplement]{"entity" : "category", "value" : "fat burner supplement"} based on individual fitness goals and body composition.
+    - The importance of [collagen]{"entity" : "category", "value" : "collagen"} in maintaining skin elasticity and preventing wrinkles
+    - Safe usage guidelines for [smelling salts]{"entity" : "category", "value" : "smelling salts"} to avoid potential side effects.
+    - Recipe ideas for incorporating [pea protein powder]{"entity" : "category", "value" : "pea protein powder"} into smoothies and desserts.
+    - Experimenting with [Myprotein]{"entity" : "brand", "value" : "Myprotein"} in baking recipes to boost protein intake.
+    - Key considerations when selecting the ideal [pre-workout supplement]{"entity" : "category", "value" : "pre-workout supplement"} to align with specific fitness objectives and body requirements.
+    - Understanding the role of [creatine]{"entity" : "category", "value" : "creatine"} in enhancing muscle strength and performance during workouts.
+    - Proper techniques for using [Gorilla Mind] {"entity" : "brand", "value" : "Gorilla Mind "} [fat burner]{"entity": "category","value" : "fat burner"} to maximize effectiveness and minimize potential side effects.
+    - Exploring innovative ways to incorporate [EAA]{"entity" : "category", "value" : "EAA"} supplements into daily nutrition for improved muscle recovery and growth.
+    - The significance of [calcium and magnesium]{"entity" : "category", "value" : "calcium and magnesium"} in supporting bone health and overall well-being.
+    - Safety precautions when using [smelling salts]{"entity" : "category", "value" : "smelling salts"} to prevent adverse reactions and ensure optimal performance enhancement.
+    - Indulgent recipes featuring [pea protein powder]{"entity" : "category", "value" : "pea protein powder"} for delicious yet nutritious smoothies and desserts.
+    - Incorporating [Optimum Nutrition]{"entity" : "brand", "value" : "Optimum Nutrition"} [casein]{"entity" : "category" , "value" : "casein"} in dessert recipes for a slow-release protein boost.
+    - Factors to consider when selecting the right [BCAA (branched-chain amino acids)]{"entity" : "category", "value" : "BCAA"} supplement based on workout intensity and muscle recovery needs.
+    - The role of [fish oil]{"entity" : "category", "value" : "fish oil"} supplements in supporting joint health and reducing inflammation in athletes.
+    - Guidelines for safe and effective use of [caffeine pills]{"entity" : "category", "value" : "caffeine pills"} to enhance energy levels and workout performance.
+    - Innovative ways to include [myofascial release tools]{"entity" : "category", "value" : "myofascial release tools"} in recovery routines for faster muscle repair and injury prevention.
+    - Understanding the importance of [glucosamine and chondroitin]{"entity" : "category", "value" : "glucosamine and chondroitin"} supplements in promoting joint mobility and cartilage health.
+    - Exploring the benefits of [ZMA (zinc, magnesium, and vitamin B6)]{"entity" : "category", "value" : "ZMA"} supplements for improving sleep quality and muscle recovery.
+    - Safe dosage recommendations for [beta-alanine]{"entity" : "category", "value" : "beta-alanine"} supplements to delay muscle fatigue and improve endurance during high-intensity workouts.
+    - Innovative recipes for incorporating [vegan protein powder]{"entity" : "category", "value" : "vegan protein powder"} into savory dishes for added nutrition and flavor.
+    - [Gorilla Mind]{"entity": "brand", "value": "Gorilla Mind"} pre-workout
+    - [creatine]{"entity": "category", "value": "creatine"} by [Optimum Nutrition]{"entity": "brand", "value": "Optimum Nutrition"}
+    - [BCAA]{"entity": "category", "value": "BCAA"} supplements from [Myprotein]{"entity": "brand", "value": "Myprotein"}
+    - [casein protein]{"entity": "category", "value": "casein protein"} from [MuscleTech]{"entity": "brand", "value": "MuscleTech"}
+    - [EAA]{"entity": "category", "value": "EAA"} by [Redcon1]{"entity": "brand", "value": "Redcon1"}
+    - [peanut butter protein powder]{"entity": "category", "value": "peanut butter protein powder"} by [Bulk Powders]{"entity": "brand", "value": "Bulk Powders"}
+    - [beta-alanine]{"entity": "category", "value": "beta-alanine"} by [GNC]{"entity": "brand", "value": "GNC"}
+    - Find cheap [L-carnitine]{"entity": "category", "value": "L-carnitine"} online.
+    - Best prices for [L-citrulline]{"entity": "category", "value": "L-citrulline"}.
+    - Top brands offering [vitamin D]{"entity": "category", "value": "vitamin D"} supplements.
+    - Find [vitamin B]{"entity": "category", "value": "vitamin B"} for less from major brands.
+    - Buy [minoxidil]{"entity": "category", "value": "minoxidil"} for hair growth.
+    - Cheap [DHT blockers]{"entity": "category", "value": "DHT blockers"} for sale.
+    - Get deals on [apple cider vinegar]{"entity": "category", "value": "apple cider vinegar"}.
+    - Brands offering [essential oils]{"entity": "category", "value": "essential oils"} for wellness.
+    - Cheap [mass gainers]{"entity": "category", "value": "mass gainers"} from popular brands.
+    - Explore protein-cookie options from top brands like [Quest]{"entity": "brand", "value": "Quest"} and [Lenny & Larry's]{"entity": "brand", "value": "Lenny & Larry's"}.
+    - Discover refreshing juices for post-workout hydration in the [beverages]{"entity": "category", "value": "beverages"} section.
+    - Find the best shampoos for gym-goers to remove sweat and grime in the [hair care]{"entity": "category", "value": "hair care"} aisle.
+    - Browse biotin conditioners for healthier, stronger hair in the [hair care]{"entity": "category", "value": "hair care"} section.
+    - Check out the latest gym equipment for home workouts in the [fitness equipment]{"entity": "category", "value": "fitness equipment"} category.
+    - Shop for high-quality shakers for mixing protein shakes in the [shakers]{"entity": "category", "value": "shakers"} section.
+    - Find comfortable t-shirts for your next gym session in the [apparel]{"entity": "category", "value": "apparel"} section.
+    - Get discounts on protein-cookie bundles for a quick snack on the go in the [snacks]{"entity": "category", "value": "snacks"} category.
+    - Explore organic juices for a boost of vitamins and minerals in the [beverages]{"entity": "category", "value": "beverages"} section.
+    - Discover dry shampoos for quick refresh between gym sessions in the [hair care]{"entity": "category", "value": "hair care"} aisle.
+    - Find biotin conditioners for promoting hair growth and thickness in the [hair care]{"entity": "category", "value": "hair care"} section.
+    - Join a community gym for group classes and personal training in the [fitness centers]{"entity": "category", "value": "fitness centers"} category.
+    - Browse stylish shakers with sleek designs for your protein shakes in the [shakers]{"entity": "category", "value": "shakers"} section.
+    - Shop for breathable t-shirts designed for intense workouts in the [apparel]{"entity": "category", "value": "apparel"} section.
+    - Discover protein-cookie options from brands like [Kapiva]{"entity": "brand", "value": "Kapiva"} and [Manarden]{"entity": "brand", "value": "Manarden"}.
+    - Explore refreshing juices for post-workout hydration in the [beverages]{"entity": "category", "value": "beverages"} section, including offerings from [Swisse]{"entity": "brand", "value": "Swisse"} and [HK Vitals]{"entity": "brand", "value": "HK Vitals"}.
+    - Find specialized shampoos for gym-goers to remove sweat and grime, including options from [Nutrafirst]{"entity": "brand", "value": "Nutrafirst"} and [Amway]{"entity": "brand", "value": "Amway"}.
+    - Browse biotin conditioners for healthier, stronger hair in the [hair care]{"entity": "category", "value": "hair care"} section, featuring brands like [Kapiva]{"entity": "brand", "value": "Kapiva"} and [Swisse]{"entity": "brand", "value": "Swisse"}.
+    - Check out the latest gym equipment for home workouts in the [fitness equipment]{"entity": "category", "value": "fitness equipment"} category, including offerings from [HK Vitals]{"entity": "brand", "value": "HK Vitals"} and [Manarden]{"entity": "brand", "value": "Manarden"}.
+    - Shop for high-quality shakers for mixing protein shakes in the [shakers]{"entity": "category", "value": "shakers"} section, featuring brands like [Kapiva]{"entity": "brand", "value": "Kapiva"} and [Nutrafirst]{"entity": "brand", "value": "Nutrafirst"}.
+    - Find comfortable t-shirts for your next gym session in the [apparel]{"entity": "category", "value": "apparel"} section, including options from [HK Vitals]{"entity": "brand", "value": "HK Vitals"} and [Amway]{"entity": "brand", "value": "Amway"}.
+    - I am looking for [MB]{"entity" : "brand" ,"value" : "MB" } supplements for [weight loss]{"entity": "category", "value":"weight loss"}
+    - op kardoo [HK]{"entity" : "brand",  "value" : "HK"}  supplements 
+    - [MuscleBlaze]{"entity" : "brand" , "value" : "MuscleBlaze"} [protein]{"entity" : "category" , "value" : "protein"}
+    - [t-boost]{"entity" : "category" , "value" : "t-boost"} tablets for muscle growth.
